@@ -22,11 +22,7 @@ const Signup = () => {
         <Text style={styles.header_text}>Kaydol</Text>
       </View>
       <Input label="Username" placeholder="yourusername" />
-      <Input
-        label="E-mail"
-        placeholder="yourname@example.com"
-        isSecure="true"
-      />
+      <Input label="E-mail" placeholder="yourname@example.com" />
       <Input label="Password" placeholder="yourpassword" isSecure="true" />
       <Input
         label="Password Again"

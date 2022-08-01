@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "./screens/Login";
 import Signup from "./screens/Signup";
 import Entries from "./screens/Entries";
+import Profile from "./screens/Profile";
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +26,11 @@ const Router = () => {
         <Stack.Screen
           name="EntriesPage"
           component={Entries}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="ProfilePage"
+          component={Profile}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
