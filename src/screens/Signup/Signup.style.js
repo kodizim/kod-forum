@@ -14,7 +14,7 @@ export default StyleSheet.create({
   header: {
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 49,
+    marginTop: 30,
   },
   header_text: {
     color: COLORS.white,
@@ -38,11 +38,5 @@ export default StyleSheet.create({
   },
   signup: {
     color: COLORS.white,
-  },
-  form: {
-    marginBottom: "15%",
-  },
-  buttons: {
-    marginTop: "5%",
   },
 });

@@ -1,8 +1,9 @@
 import { StyleSheet } from "react-native";
+import { COLORS } from "../../constants/Colors";
 
 export default StyleSheet.create({
   container: {
-    backgroundColor: "#48C0B2",
+    backgroundColor: COLORS.green,
     marginHorizontal: 70,
     width: 250,
     height: 49,
@@ -11,7 +12,7 @@ export default StyleSheet.create({
     alignItems: "center",
   },
   button_text: {
-    color: "white",
+    color: COLORS.white,
     fontSize: 20,
   },
 });
