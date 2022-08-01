@@ -1,9 +1,13 @@
 import React from "react";
 import { SafeAreaView, Text, Image, View, ScrollView } from "react-native";
 import styles from "./Entries.style";
+import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 
 import EntryCard from "../../components/EntryCard";
 import CategoryCard from "../../components/CategoryCard";
+import { create } from "react-test-renderer";
+
+const Tab = createMaterialBottomTabNavigator();
 
 const Entries = () => {
   return (

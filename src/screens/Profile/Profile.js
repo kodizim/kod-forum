@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, Text, View, ScrollView, Image } from "react-native";
+import { Text, View, ScrollView, Image } from "react-native";
 import styles from "./Profile.style";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import { COLORS } from "../../constants/Colors/Colors";

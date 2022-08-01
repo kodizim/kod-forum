@@ -15,6 +15,10 @@ const Login = ({ navigation }) => {
   const reDirectSignup = () => {
     navigation.navigate("SignupPage");
   };
+
+  const goToHome = () => {
+    navigation.navigate("HomePage");
+  };
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
@@ -28,7 +32,7 @@ const Login = ({ navigation }) => {
         <Input label="E-mail" placeholder="yourname@example.com" />
         <Input label="Password" placeholder="yourpassword" isSecure="true" />
         <View style={styles.buttons}>
-          <Button title="Giriş Yap" />
+          <Button title="Giriş Yap" onPress={goToHome} />
           <Text style={styles.or}>Ya da</Text>
           <Button title="Google ile devam et" />
         </View>

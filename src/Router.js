@@ -4,8 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Login from "./screens/Login";
 import Signup from "./screens/Signup";
-import Entries from "./screens/Entries";
-import Profile from "./screens/Profile";
+import Home from "./screens/Home";
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +23,11 @@ const Router = () => {
           options={{ headerShown: false }}
         />
         <Stack.Screen
+          name="HomePage"
+          component={Home}
+          options={{ headerShown: false }}
+        />
+        {/* <Stack.Screen
           name="EntriesPage"
           component={Entries}
           options={{ headerShown: false }}
@@ -32,7 +36,7 @@ const Router = () => {
           name="ProfilePage"
           component={Profile}
           options={{ headerShown: false }}
-        />
+        /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
