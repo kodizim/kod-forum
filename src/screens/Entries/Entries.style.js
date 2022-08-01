@@ -8,10 +8,15 @@ export default StyleSheet.create({
   },
   header: {
     alignItems: "center",
-    margin: 23,
+    marginTop: 25,
+    marginBottom: 22,
+  },
+  categories: {
+    marginHorizontal: 15,
+    marginBottom: 20,
   },
   logo: {
-    width: 100,
-    height: 100,
+    width: 75,
+    height: 75,
   },
 });

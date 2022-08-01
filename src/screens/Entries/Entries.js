@@ -1,7 +1,9 @@
 import React from "react";
 import { SafeAreaView, Text, Image, View, ScrollView } from "react-native";
 import styles from "./Entries.style";
+
 import EntryCard from "../../components/EntryCard";
+import CategoryCard from "../../components/CategoryCard";
 
 const Entries = () => {
   return (
@@ -12,6 +14,20 @@ const Entries = () => {
           source={require("../../assets/img/kodizimyesil.png")}
         />
       </View>
+      <ScrollView
+        style={styles.categories}
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+      >
+        <CategoryCard category_title={"Android"} />
+        <CategoryCard category_title={"Javascript"} />
+        <CategoryCard category_title={"iOS"} />
+        <CategoryCard category_title={"Backend"} />
+        <CategoryCard category_title={"Frontend"} />
+        <CategoryCard category_title={"React"} />
+        <CategoryCard category_title={"React Native"} />
+        <CategoryCard category_title={"Web Development"} />
+      </ScrollView>
       <ScrollView>
         <EntryCard />
         <EntryCard />
